@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(180deg, #FA5D54, rgb(246, 246, 250));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  width: 440px;
+  background-color: white;
+  border-radius: 4px; 
+  overflow: hidden;
+  margin: 80px auto;
+  padding: 16px;
+}
+
+.header {
+  background-color: rgb(252, 247, 247);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Nunito", sans-serif;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  margin-left: 28px;
+}
+label {
+  font-family: "Work Sans", sans-serif;
+}
+
+.form {
+  padding: 20px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #918f8f;
+}
+
+.form-control.success input {
+  border: 2px solid green;
+}
+
+.form-control.error input {
+  border: 2px solid rgb(190, 30, 30);
+}
+.form-control small {
+  position: absolute;
+  margin-bottom: 8px;
+  visibility: hidden;
+  color: rgb(185, 51, 17);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+#form-control-select {
+  width: 100%;
+  margin-bottom: 20px;
+}
+button {
+  background-color: #fd4b63;
+  color: white;
+  padding: 20px 20px;
+  width: 100%;
+  border-radius: 6px;
+  border: 2px solid rgb(218, 92, 43);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#result {
+  margin-bottom: 5px;
+}
+ /*  media queries for resposiveness  */
+@media (max-width: 584px){
+  .container {
+    width: 100%;
+  }
+  .form-control input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #918f8f;
+  }
+  #form-control-select {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) {
+
+}
