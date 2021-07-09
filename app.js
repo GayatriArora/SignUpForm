@@ -57,7 +57,7 @@ function validateInput() {
   const dropDown = document.getElementById("form-control-select").value;
   if (dropDown == "please select") {
     document.getElementById("result").innerHTML =
-      "Please select atleast One List Item!";
+      "Please select atleast One Option!";
     document.getElementById("result").style.color = "crimson";
     // alert("Please select an option");
     return false;
